@@ -3,47 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Your Website Title</title>
-    <!-- Link to CSS stylesheet (if you have one) -->
-    <link rel="stylesheet" href="styles.css">
+    <title>My Website with Boxes</title>
+    <style>
+        /* Basic styling for layout */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+
+        /* Container to arrange boxes */
+        .box-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* Box styling */
+        .box {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2em;
+            padding: 40px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+            transition: transform 0.2s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        /* Specific styling for box with image */
+        .box-image img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Header section -->
-    <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="box-container">
+        <!-- Boxes linking to subpages -->
+        <a href="subpage1.html" class="box">Subpage 1</a>
+        <a href="subpage2.html" class="box">Subpage 2</a>
+        
+        <!-- Box with an image linking to subpage3.html -->
+        <a href="subpage3.html" class="box box-image">
+            <img src="your-image.jpg" alt="Image Box">
+        </a>
 
-    <!-- Main content area -->
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section of your website.</p>
-        </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>Here, you can add some information about yourself or your project.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Include your contact information here.</p>
-        </section>
-    </main>
-
-    <!-- Footer section -->
-    <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
-    </footer>
+        <a href="subpage4.html" class="box">Subpage 4</a>
+        <a href="subpage5.html" class="box">Subpage 5</a>
+        <a href="subpage6.html" class="box">Subpage 6</a>
+    </div>
 
 </body>
 </html>
