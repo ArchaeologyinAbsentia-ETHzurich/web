@@ -16,7 +16,7 @@
             background-color: #ffffff;
             margin: 0;
             text-align: center;
-            overflow: hidden; /* Prevents scrolling */
+            overflow: hidden;
         }
 
         /* Container for the large image at the top */
@@ -35,7 +35,7 @@
             object-fit: cover;
         }
 
-        /* Container for arranging boxes */
+        /* Container for arranging boxes in a single column */
         .box-container {
             display: flex;
             flex-direction: column;
@@ -44,10 +44,9 @@
             width: 100%;
         }
 
-        /* Box styling with fading animation */
+        /* Box styling with fading background animation */
         .box {
-            background-color: rgb(10, 10, 10);
-            color: #ffffff;
+            color: #ffffff; /* White text */
             text-align: center;
             text-decoration: none;
             font-size: 1.2em;
@@ -57,41 +56,42 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            animation: fade 8s ease-in-out infinite;
+            background-color: rgba(10, 10, 10, 0.8); /* Dark grey with 80% opacity */
+            animation: fadeBackground 8s ease-in-out infinite;
             transition: transform 0.2s ease;
-            opacity: 0.95; /* Starting opacity */
         }
 
-        /* Fade-in and fade-out effect */
-        @keyframes fade {
-            0%, 100% { opacity: 0.95; }
-            50% { opacity: 1; }
+        /* Background fade animation */
+        @keyframes fadeBackground {
+            0%, 100% { background-color: rgba(10, 10, 10, 0.8); } /* 80% opaque */
+            50% { background-color: rgba(10, 10, 10, 0.4); } /* 40% opaque */
         }
 
         /* Adding slight variations for each box animation timing */
-        .box:nth-child(1) { animation-duration: 7s; animation-delay: 0s; }
-        .box:nth-child(2) { animation-duration: 9s; animation-delay: 1s; }
-        .box:nth-child(3) { animation-duration: 8s; animation-delay: 2s; }
-        .box:nth-child(4) { animation-duration: 10s; animation-delay: 3s; }
-        .box:nth-child(5) { animation-duration: 11s; animation-delay: 1.5s; }
-        .box:nth-child(6) { animation-duration: 9s; animation-delay: 0.5s; }
+        .box:nth-child(1) { animation-delay: 0s; }
+        .box:nth-child(2) { animation-delay: 1s; }
+        .box:nth-child(3) { animation-delay: 2s; }
+        .box:nth-child(4) { animation-delay: 3s; }
+        .box:nth-child(5) { animation-delay: 1.5s; }
+        .box:nth-child(6) { animation-delay: 0.5s; }
 
         .box:hover {
             transform: scale(1.05);
         }
 
-        /* Styling for the promoter images container */
+        /* Styling for the promoter image container */
         .promoter-container {
             display: flex;
             justify-content: center;
             margin-top: 30px;
-            animation: fade 10s ease-in-out infinite; /* Fading effect for the logo */
+            animation: fadeBackground 8s ease-in-out infinite;
         }
 
         .promoter-container img {
             height: 30px;
             object-fit: cover;
         }
+
     </style>
 </head>
 <body>
