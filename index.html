@@ -13,9 +13,10 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #ffffff; /* White background */
+            background-color: #ffffff;
             margin: 0;
             text-align: center;
+            overflow: hidden; /* Prevents scrolling when boxes move */
         }
 
         /* Container for the large image at the top */
@@ -23,7 +24,7 @@
             width: 100%;
             display: flex;
             justify-content: center;
-            margin-bottom: 30px; /* Space between the large image and the boxes */
+            margin-bottom: 30px;
         }
 
         /* Styling for the large image */
@@ -34,16 +35,16 @@
             object-fit: cover;
         }
 
-        /* Container for arranging boxes in a single column */
+        /* Container for arranging boxes */
         .box-container {
             display: flex;
             flex-direction: column;
-            gap: 8px; /* Reduced gap between boxes */
+            gap: 8px;
             max-width: 600px;
             width: 100%;
         }
 
-        /* Box styling */
+        /* Box styling with floating animation */
         .box {
             background-color: rgb(10, 10, 10);
             color: #ffffff;
@@ -56,11 +57,29 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            animation: float 8s ease-in-out infinite;
             transition: transform 0.2s ease;
         }
 
+        /* Floating effect for the boxes */
+        @keyframes float {
+            0% { transform: translate(0px, 0px); }
+            25% { transform: translate(-5px, -10px); }
+            50% { transform: translate(10px, 5px); }
+            75% { transform: translate(-10px, 10px); }
+            100% { transform: translate(0px, 0px); }
+        }
+
+        /* Adding slight variations for each box animation timing */
+        .box:nth-child(1) { animation-duration: 7s; animation-delay: 0s; }
+        .box:nth-child(2) { animation-duration: 9s; animation-delay: 1s; }
+        .box:nth-child(3) { animation-duration: 8s; animation-delay: 2s; }
+        .box:nth-child(4) { animation-duration: 10s; animation-delay: 3s; }
+        .box:nth-child(5) { animation-duration: 11s; animation-delay: 1.5s; }
+        .box:nth-child(6) { animation-duration: 9s; animation-delay: 0.5s; }
+
         .box:hover {
-            transform: scale(1.02);
+            transform: scale(1.05);
         }
 
         /* Styling for the promoter images container */
@@ -68,13 +87,13 @@
             display: flex;
             justify-content: center;
             margin-top: 30px;
+            animation: float 10s ease-in-out infinite; /* Floating effect for the logo */
         }
 
         .promoter-container img {
             height: 30px;
             object-fit: cover;
         }
-
     </style>
 </head>
 <body>
