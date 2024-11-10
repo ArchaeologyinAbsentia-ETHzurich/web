@@ -13,7 +13,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #ffffff;
+            background-color: #ffffff; /* White background */
             margin: 0;
             text-align: center;
             overflow: hidden;
@@ -44,9 +44,9 @@
             width: 100%;
         }
 
-        /* Box styling with fading background animation */
+        /* Box styling */
         .box {
-            color: #ffffff; /* White text */
+            color: #000000; /* Black text */
             text-align: center;
             text-decoration: none;
             font-size: 1.2em;
@@ -56,35 +56,30 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgba(10, 10, 10, 0.8); /* Dark grey with 80% opacity */
-            animation: fadeBackground 8s ease-in-out infinite;
-            transition: transform 0.2s ease;
+            background-color: transparent; /* No background color */
+            animation: fadeText ease-in-out infinite;
         }
 
-        /* Background fade animation */
-        @keyframes fadeBackground {
-            0%, 100% { background-color: rgba(10, 10, 10, 0.8); } /* 80% opaque */
-            50% { background-color: rgba(10, 10, 10, 0.4); } /* 40% opaque */
+        /* Fade animation for text opacity */
+        @keyframes fadeText {
+            0% { opacity: 0; }
+            50% { opacity: 1; }
+            100% { opacity: 0; }
         }
 
-        /* Adding slight variations for each box animation timing */
-        .box:nth-child(1) { animation-delay: 0s; }
-        .box:nth-child(2) { animation-delay: 1s; }
-        .box:nth-child(3) { animation-delay: 2s; }
-        .box:nth-child(4) { animation-delay: 3s; }
-        .box:nth-child(5) { animation-delay: 1.5s; }
-        .box:nth-child(6) { animation-delay: 0.5s; }
-
-        .box:hover {
-            transform: scale(1.05);
-        }
+        /* Randomizing animation duration and delay for each box */
+        .box:nth-child(1) { animation-duration: 4s; animation-delay: 0s; }
+        .box:nth-child(2) { animation-duration: 5s; animation-delay: 1s; }
+        .box:nth-child(3) { animation-duration: 3.5s; animation-delay: 2s; }
+        .box:nth-child(4) { animation-duration: 6s; animation-delay: 1.5s; }
+        .box:nth-child(5) { animation-duration: 4.5s; animation-delay: 0.5s; }
+        .box:nth-child(6) { animation-duration: 5.5s; animation-delay: 0s; }
 
         /* Styling for the promoter image container */
         .promoter-container {
             display: flex;
             justify-content: center;
             margin-top: 30px;
-            animation: fadeBackground 8s ease-in-out infinite;
         }
 
         .promoter-container img {
