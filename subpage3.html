@@ -20,16 +20,23 @@
             margin-bottom: 20px;
         }
 
-        /* Video container styling */
+        /* YouTube embed container styling */
         .video-container {
             width: 80%;
             max-width: 800px;
+            height: 450px; /* Adjust the height of the video container */
+            position: relative;
+            padding-bottom: 56.25%; /* Aspect ratio 16:9 */
+            overflow: hidden;
         }
-        
-        /* Center video */
-        video {
+
+        /* YouTube embed iframe styling */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: auto;
+            height: 100%;
         }
     </style>
 </head>
@@ -37,11 +44,8 @@
 
     <h1>No Other Land - Official Trailer</h1>
     <div class="video-container">
-        <!-- Embedded video -->
-        <video controls>
-            <source src="no-other-land-trailer.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <!-- YouTube Embed Code -->
+        <iframe src="https://www.youtube.com/embed/7AS6v3hC86Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 
 </body>
