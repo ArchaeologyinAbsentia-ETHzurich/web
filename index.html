@@ -7,7 +7,7 @@
     <style>
         /* Basic styling for layout */
         body {
-            font-family: Arial, sans-serif;
+            font-family: Helvetica, Arial, sans-serif;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -28,8 +28,8 @@
 
         /* Styling for the large image */
         .large-image-container img {
-            width: 80%; /* Adjust width as necessary */
-            max-width: 800px; /* Limit max size */
+            width: 80%;
+            max-width: 800px;
             height: auto;
             object-fit: cover;
         }
@@ -43,16 +43,16 @@
             width: 100%;
         }
 
-        /* Box styling to make them wide and thin */
+        /* Box styling */
         .box {
-            background-color: rgb(10, 10, 10); /* Dark grey background */
-            color: #ffffff; /* White text color */
+            background-color: rgb(10, 10, 10);
+            color: #ffffff;
             text-align: center;
             text-decoration: none;
             font-size: 1.2em;
-            padding: 8px; /* Reduced padding for a more compact box */
-            width: 100%; /* Full container width */
-            height: 40px; /* Further reduced height for compact appearance */
+            padding: 8px;
+            width: 100%;
+            height: 40px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -60,7 +60,7 @@
         }
 
         .box:hover {
-            transform: scale(1.02); /* Slight zoom on hover */
+            transform: scale(1.02);
         }
 
         /* Styling for the promoter images container */
@@ -71,7 +71,7 @@
         }
 
         .promoter-container img {
-            height: 30px; /* Set the height of the promoter image */
+            height: 30px;
             object-fit: cover;
         }
 
@@ -79,30 +79,18 @@
 </head>
 <body>
 
-    <!-- Large Image at the top, centered -->
     <div class="large-image-container">
         <img src="BIGlogo.jpg" alt="Large Promotional Image">
     </div>
 
     <div class="box-container">
-        <!-- Event Information box linking to the event information subpage -->
         <a href="event-info.html" class="box">Event Information</a>
-
-        <!-- Guest Speakers box linking to guest speakers subpage -->
         <a href="guest-speakers.html" class="box">Guest Speakers</a>
-
-        <!-- Just a title like the rest of the boxes -->
-        <a href="subpage3.html" class="box">No Other Land</a>
-
+        <a href="subpage3.html" class="box">'No Other Land' Trailer</a>
         <a href="streaming-link.html" class="box">Online Streaming Link</a>
-
-        <!-- 5th box linking to Instagram -->
         <a href="https://www.instagram.com/yourusername" class="box" target="_blank">Instagram</a>
-
-        <!-- 6th box for poster download -->
         <a href="your-image.jpg" class="box" download>Poster Download</a>
 
-        <!-- Container for the one promoter image (logos) -->
         <div class="promoter-container">
             <img src="logos.jpg" alt="Promoter Logo">
         </div>
