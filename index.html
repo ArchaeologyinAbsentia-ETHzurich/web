@@ -20,7 +20,7 @@
         .box-container {
             display: flex;
             flex-direction: column;
-            gap: 2px;
+            gap: 10px;
             max-width: 600px;
             width: 100%;
         }
@@ -34,7 +34,7 @@
             font-size: 1.2em;
             padding: 20px;
             width: 100%; /* Full container width */
-            height: 30px; /* Thin list-like appearance */
+            height: 60px; /* Thin list-like appearance */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -49,13 +49,11 @@
         .promoter-container {
             display: flex;
             justify-content: center;
-            gap: 20px; /* Space between the two images */
             margin-top: 30px;
         }
 
         .promoter-container img {
-            width: auto; /* Set the size for the promoter images */
-            height: 20px;
+            height: 30px; /* Set the height of the promoter image */
             object-fit: cover;
         }
 
@@ -64,9 +62,11 @@
 <body>
 
     <div class="box-container">
-        <!-- Boxes linking to subpages -->
-        <a href="subpage1.html" class="box">Subpage 1</a>
-        <a href="subpage2.html" class="box">Subpage 2</a>
+        <!-- Event Information box linking to the event information subpage -->
+        <a href="event-info.html" class="box">Event Information</a>
+
+        <!-- Guest Speakers box linking to guest speakers subpage -->
+        <a href="guest-speakers.html" class="box">Guest Speakers</a>
 
         <!-- Just a title like the rest of the boxes -->
         <a href="subpage3.html" class="box">No Other Land</a>
@@ -77,15 +77,13 @@
         <a href="https://www.instagram.com/yourusername" class="box" target="_blank">Instagram</a>
 
         <!-- 6th box for image download -->
-        <a href="postera3.jpg" class="box" download>Download Image</a>
+        <a href="your-image.jpg" class="box" download>Download Image</a>
 
-        <!-- Container for the two promoter images -->
+        <!-- Container for the one promoter image (logos) -->
         <div class="promoter-container">
-            <!-- Replace these with your actual image paths -->
-            <img src="logos.jpg" alt="Promoter 1">
+            <img src="promoter1.png" alt="Promoter Logo">
         </div>
     </div>
 
 </body>
 </html>
-
