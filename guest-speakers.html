@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guest Speakers</title>
-     <style>
+    <style>
         /* Basic layout styling */
         body {
             font-family: Helvetica, Arial, sans-serif;
@@ -35,21 +35,39 @@
         .container {
             width: 80%;
             max-width: 400px; /* Limit max width for larger screens */
-            text-align: center;
+            text-align: left; /* Align text to the left for biographies */
         }
 
-        /* Responsive image styling */
-        .image-container img {
-            width: 100%; /* Scale image to container width */
-            height: auto; /* Keep aspect ratio */
-            max-width: 100%; /* Ensure it doesn’t exceed container */
-            object-fit: cover;
+        /* Biography box styling */
+        .biography {
+            border: 1px solid #ddd; /* Light border around the box */
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0; /* Space between each biography box */
+            background-color: #f9f9f9;
+            max-width: 400px; /* Constrain box width */
+            word-wrap: break-word; /* Ensure long words wrap to next line */
         }
 
-        /* Adjustments for smaller devices */
+        .biography h2 {
+            margin-top: 0; /* Remove top margin for heading */
+            color: #333;
+        }
+
+        .biography p {
+            margin: 8px 0 0; /* Space between paragraph and heading */
+            line-height: 1.6; /* Improve readability with line spacing */
+            color: #555; /* Softer color for readability */
+        }
+
+        /* Responsive styling for smaller devices */
         @media (max-width: 600px) {
             .back-arrow {
-                font-size: 2em; /* Reduce size for mobile */
+                font-size: 1.8em;
+            }
+
+            .biography {
+                padding: 12px;
             }
         }
     </style>
@@ -59,26 +77,32 @@
     <!-- Back Arrow -->
     <a href="index.html" class="back-arrow">← Back</a>
 
-    <div class="content">
-        <h1> </h1>
+    <div class="container">
+        <h1>Guest Speakers</h1>
 
         <!-- Guest Speaker 1 -->
         <div class="biography">
             <h2>Júlia Nueno Guitart</h2>
-            <p>Júlia Nueno Guitart is an engineer and researcher focused on the intersection between digital infrastructures and emergent, resistant, or disappearing communities. In her practice, she challenges dichotomies of virtual/real, technical/natural, human/non-human merging activism and bottom-up design processes to intervene in the structures that shape life and living space. Her doctoral research project Digital Autonomia explores forms of data commons that can be used to reinstate agency in algorithmically determined environments. She holds a master’s degree with distinction from the Centre of Research Architecture at Goldsmiths; and a BA in Energy Engineering from Universitat Politècnica de Catalunya.
-
-Júlia is the recipient of the Forensic Architecture: Open Verification (FAOV) PhD Fellowship 2023.
-</p>
+            <p>
+                Júlia Nueno Guitart is an engineer and researcher focused on the intersection between digital infrastructures and emergent, resistant, or disappearing communities. In her practice, she challenges dichotomies of virtual/real, technical/natural, and human/non-human, merging activism and bottom-up design processes to intervene in the structures that shape life and living space. Her doctoral research project, *Digital Autonomia*, explores forms of data commons that can be used to reinstate agency in algorithmically determined environments. She holds a master’s degree with distinction from the Centre of Research Architecture at Goldsmiths and a BA in Energy Engineering from Universitat Politècnica de Catalunya.
+            </p>
+            <p>
+                Júlia is the recipient of the Forensic Architecture: Open Verification (FAOV) PhD Fellowship 2023.
+            </p>
         </div>
 
         <!-- Guest Speaker 2 -->
         <div class="biography">
-            <h2>Speaker 2: Jane Smith</h2>
-            <p>Jane Smith is a renowned speaker on the topic of innovation...</p>
+            <h2>Rona Sela</h2>
+            <p>Dr. Rona Sela is a curator, researcher of visual history and culture and lecturer at Tel Aviv University. Since 1996 she has researched the history of colonial Zionist/Israeli photography and archives, women photographers in Palestine/Israel, Palestinian photography, the Israeli and Palestinian conflict, colonial looting and plunder, archives under occupation, Palestinian photography and Nakba images/Palestinian visual history in Israeli archives; visual representation of conflict, war, occupation, exile, immigration and human-rights violation (Sela 2000, 2007, 2009, 2012, 2013, 2015, 2017, 2018). She examines how the visual sphere of Zionist and Israeli colonialism, as one component in a huge mechanism, has been exploited and used for political and ideological objectives since the beginning of the 20th century. Sela exposes the various means of force used by Israel to seize/loot Palestinian archives/treasurers, the way Israeli national/colonial archives have become a large reservoir of knowledge and information about the Palestinians, and Israel's control over knowledge and the writing of history. In her work, she raises questions about the role of archives, archivists and researchers in colonial regions and zones of conflict.
+
+Sela deals with methods to crack colonial patterns by various means such as archival practices - building post-colonial/de-colonial archives (2009, 2012, 2015,2017), or through activism by civil society. Sela's work (2013) discusses the development of Palestinian civil society – among them artists and activists - who fight to reduce inequality and apply democracy to all residents of the state. These artists and activists struggle over housing, planning, education and budgets, and insist on exposing Palestinian history and the Arabic language, which were erased intentionally from the public sphere. Sela studied the role of civil activism as a vehicle for change. She also studies the visual historiography of marginalized groups. She has curated numerous exhibitions and published many books, catalogues and articles on these topics.Among them: Photography in Palestine/Eretz-Israel in the 30s and 40s (2000),Six Days and Forty Years (2007), women photographers in Palestine/Israel (2008), "The Absent-Present Palestinian Villages”(2009), Made Public – Palestinian Photographs in Military Archives in Israel (2009), Chalil Raad, Photographs 1891-1948 (2010), Effervescence (Unrest) - Housing, Language, History - A New Generation in Jewish-Arab Cities (2013), "The Genealogy of Colonial Plunder and Erasure – Israel's Control over Palestinian Archives"(first published on line in 2017), "Seized in Beirut - The Plundered Archives of the Palestinian Cinema Institution" (2017) and لمُعاينة الجُمهور - الفلسطينيّون في الأرشيفات العسكريّة الإسرائيليّة - (Madar enter, 2018)."Looted and Hidden - Palestinian Archives in Israel" is her first film.
+ 
+ 
+Dr. Sela initiated and founded the first library dedicated to local photography at Beit Avi Chai in Jerusalem, is a lecture at Tel Aviv University, and the initiator and chairperson of the nonprofit Center for Research and Preservation of Local Photography. She also lectured at the Bezalel Academy of Art and Design in Jerusalem and at Hadassah College. Dr. Sela was chief curator at the Haifa City Museum, Curator of Photography at the Tel Aviv Museum of Art and has curated and researched many exhibitions. At the Tel Aviv Museum of Art, Dr. Sela's main emphasis was on exhibiting international artists who represented the essential change that occurred in photography from the seventies and the social political interest in postmodern photography - a new direction for the museum. Dr. Sela has published books, catalogues and many articles and essays.</p>
         </div>
 
         <!-- Add more biographies as needed -->
-
     </div>
 
 </body>
