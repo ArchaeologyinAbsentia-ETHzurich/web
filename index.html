@@ -9,11 +9,29 @@
         body {
             font-family: Arial, sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             background-color: #ffffff; /* White background */
             margin: 0;
+            text-align: center;
+        }
+
+        /* Container for the large image at the top */
+        .large-image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px; /* Space between the large image and the boxes */
+        }
+
+        /* Styling for the large image */
+        .large-image-container img {
+            width: 80%; /* Adjust width as necessary */
+            max-width: 800px; /* Limit max size */
+            height: auto;
+            object-fit: cover;
         }
 
         /* Container for arranging boxes in a single column */
@@ -32,9 +50,9 @@
             text-decoration: none;
             color: #333;
             font-size: 1.2em;
-            padding: 20px;
+            padding: 15px; /* Reduced padding for a more compact box */
             width: 100%; /* Full container width */
-            height: 60px; /* Thin list-like appearance */
+            height: 50px; /* Reduced height for compact appearance */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -61,6 +79,11 @@
 </head>
 <body>
 
+    <!-- Large Image at the top, centered -->
+    <div class="large-image-container">
+        <img src="large-image.jpg" alt="Large Promotional Image">
+    </div>
+
     <div class="box-container">
         <!-- Event Information box linking to the event information subpage -->
         <a href="event-info.html" class="box">Event Information</a>
@@ -81,7 +104,7 @@
 
         <!-- Container for the one promoter image (logos) -->
         <div class="promoter-container">
-            <img src="logos.jpg" alt="Architektura - VSETH">
+            <img src="promoter1.png" alt="Promoter Logo">
         </div>
     </div>
 
