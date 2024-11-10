@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Information</title>
- <style>
+    <style>
         /* Basic layout styling */
         body {
             font-family: Helvetica, Arial, sans-serif;
@@ -22,26 +22,41 @@
             position: absolute;
             top: 20px;
             left: 20px;
-            font-size: 3em;
+            font-size: 1.8em;
             text-decoration: none;
             color: #333;
         }
 
         .back-arrow:hover {
-            color: #0073e6; /* Highlight color for hover */
+            color: #0073e6;
         }
 
-        /* Content container styling */
+        /* Container styling */
         .container {
             width: 80%;
-            max-width: 300px;
+            max-width: 400px; /* Limit max width for larger screens */
             text-align: center;
+        }
+
+        /* Responsive image styling */
+        .image-container img {
+            width: 100%; /* Scale image to container width */
+            height: auto; /* Keep aspect ratio */
+            max-width: 100%; /* Ensure it doesn’t exceed container */
+            object-fit: cover;
+        }
+
+        /* Adjustments for smaller devices */
+        @media (max-width: 600px) {
+            .back-arrow {
+                font-size: 1.5em; /* Reduce size for mobile */
+            }
         }
     </style>
 </head>
 <body>
 
-        <!-- Back Arrow -->
+    <!-- Back Arrow -->
     <a href="index.html" class="back-arrow">← Back</a>
     
     <div class="content">
@@ -50,7 +65,7 @@
         <div class="image-container">
             <img src="image-event.jpg" alt="Event Image">
         </div>
-        <!-- You can add more images or content here -->
+        <!-- Additional content can be added here -->
     </div>
 
 </body>
