@@ -16,7 +16,7 @@
             background-color: #ffffff;
             margin: 0;
             text-align: center;
-            overflow: hidden; /* Prevents scrolling when boxes move */
+            overflow: hidden; /* Prevents scrolling */
         }
 
         /* Container for the large image at the top */
@@ -44,7 +44,7 @@
             width: 100%;
         }
 
-        /* Box styling with floating animation */
+        /* Box styling with fading animation */
         .box {
             background-color: rgb(10, 10, 10);
             color: #ffffff;
@@ -57,17 +57,15 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            animation: float 8s ease-in-out infinite;
+            animation: fade 8s ease-in-out infinite;
             transition: transform 0.2s ease;
+            opacity: 0.95; /* Starting opacity */
         }
 
-        /* Floating effect for the boxes */
-        @keyframes float {
-            0% { transform: translate(0px, 0px); }
-            25% { transform: translate(-5px, -10px); }
-            50% { transform: translate(10px, 5px); }
-            75% { transform: translate(-10px, 10px); }
-            100% { transform: translate(0px, 0px); }
+        /* Fade-in and fade-out effect */
+        @keyframes fade {
+            0%, 100% { opacity: 0.95; }
+            50% { opacity: 1; }
         }
 
         /* Adding slight variations for each box animation timing */
@@ -87,7 +85,7 @@
             display: flex;
             justify-content: center;
             margin-top: 30px;
-            animation: float 10s ease-in-out infinite; /* Floating effect for the logo */
+            animation: fade 10s ease-in-out infinite; /* Fading effect for the logo */
         }
 
         .promoter-container img {
