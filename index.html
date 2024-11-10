@@ -20,7 +20,7 @@
         .box-container {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 2px;
             max-width: 600px;
             width: 100%;
         }
@@ -34,7 +34,7 @@
             font-size: 1.2em;
             padding: 20px;
             width: 100%; /* Full container width */
-            height: 60px; /* Thin list-like appearance */
+            height: 30px; /* Thin list-like appearance */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -45,21 +45,48 @@
             transform: scale(1.02); /* Slight zoom on hover */
         }
 
+        /* Styling for the promoter images container */
+        .promoter-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between the two images */
+            margin-top: 30px;
+        }
+
+        .promoter-container img {
+            width: 100px; /* Set the size for the promoter images */
+            height: auto;
+            object-fit: cover;
+        }
+
     </style>
 </head>
 <body>
 
     <div class="box-container">
         <!-- Boxes linking to subpages -->
-        <a href="subpage1.html" class="box">Events information</a>
-        <a href="subpage2.html" class="box">Guest Speakers</a>
+        <a href="subpage1.html" class="box">Subpage 1</a>
+        <a href="subpage2.html" class="box">Subpage 2</a>
 
-        <a href="subpage3.html" class="box">No Other Land Trailer</a>
+        <!-- Just a title like the rest of the boxes -->
+        <a href="subpage3.html" class="box">No Other Land</a>
 
-        <a href="subpage4.html" class="box">Online streaming link</a>
-        <a href="subpage5.html" class="box">Instagram</a>
-        <a href="subpage6.html" class="box">Poster download</a>
+        <a href="subpage4.html" class="box">Subpage 4</a>
+
+        <!-- 5th box linking to Instagram -->
+        <a href="https://www.instagram.com/yourusername" class="box" target="_blank">Instagram</a>
+
+        <!-- 6th box for image download -->
+        <a href="your-image.jpg" class="box" download>Download Image</a>
+
+        <!-- Container for the two promoter images -->
+        <div class="promoter-container">
+            <!-- Replace these with your actual image paths -->
+            <img src="promoter1.png" alt="Promoter 1">
+            <img src="promoter2.png" alt="Promoter 2">
+        </div>
     </div>
 
 </body>
 </html>
+
