@@ -38,18 +38,27 @@
             text-align: center;
         }
 
-        /* Responsive image styling */
-        .image-container img {
-            width: 100%; /* Scale image to container width */
-            height: auto; /* Keep aspect ratio */
-            max-width: 100%; /* Ensure it doesn’t exceed container */
-            object-fit: cover;
+        /* Video container styling */
+        .video-container {
+            width: 90%; /* Full width with some padding */
+            max-width: 900px; /* Set a max width for larger screens */
+            margin: 20px auto; /* Center align */
+        }
+
+        /* Responsive video iframe styling */
+        .video-container iframe {
+            width: 100%; /* Responsive width */
+            height: 500px; /* Adjust height for a larger video */
+            max-height: 56.25vw; /* Maintain aspect ratio */
         }
 
         /* Adjustments for smaller devices */
         @media (max-width: 600px) {
             .back-arrow {
                 font-size: 2em; /* Reduce size for mobile */
+            }
+            .video-container iframe {
+                height: 250px; /* Smaller height for mobile */
             }
         }
     </style>
