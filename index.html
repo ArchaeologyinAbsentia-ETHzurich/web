@@ -71,19 +71,19 @@
             animation: fadeIn ease-in forwards;
         }
 
-        /* Slow fade-in animation */
+        /* Faster fade-in animation */
         @keyframes fadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
 
-        /* Randomized appearance with varied delays and durations */
-        .box:nth-child(5) { animation-delay: 1s; animation-duration: 4s; }
-        .box:nth-child(1) { animation-delay: 2.5s; animation-duration: 5s; }
-        .box:nth-child(4) { animation-delay: 3.5s; animation-duration: 4.5s; }
-        .box:nth-child(2) { animation-delay: 5s; animation-duration: 6s; }
-        .box:nth-child(6) { animation-delay: 6.5s; animation-duration: 5.5s; }
-        .box:nth-child(3) { animation-delay: 8s; animation-duration: 6.5s; }
+        /* Adjusted delays and durations for faster appearance */
+        .box:nth-child(5) { animation-delay: 0.5s; animation-duration: 2s; }
+        .box:nth-child(1) { animation-delay: 1s; animation-duration: 2.5s; }
+        .box:nth-child(4) { animation-delay: 1.5s; animation-duration: 2s; }
+        .box:nth-child(2) { animation-delay: 2s; animation-duration: 2.5s; }
+        .box:nth-child(6) { animation-delay: 2.5s; animation-duration: 2s; }
+        .box:nth-child(3) { animation-delay: 3s; animation-duration: 2.5s; }
 
         /* Styling for the promoter image container */
         .promoter-container {
