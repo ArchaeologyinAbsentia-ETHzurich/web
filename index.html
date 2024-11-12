@@ -88,6 +88,17 @@
             object-fit: cover;
         }
 
+        /* Title styling */
+        h1#page-title {
+            font-weight: normal;
+            transition: font-weight 0.3s ease; /* Smooth transition */
+        }
+
+        /* When any .box is hovered, make the title bolder */
+        .box:hover ~ #page-title {
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
@@ -95,6 +106,9 @@
     <div class="large-image-container">
         <img src="BIGlogo.jpg" alt="Large Promotional Image">
     </div>
+
+    <!-- Title element to be made bold on hover -->
+    <h1 id="page-title">Archaeology in Absentia</h1>
 
     <div class="box-container">
         <a href="event-info.html" class="box">Event Information</a>
