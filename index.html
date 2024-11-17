@@ -62,6 +62,19 @@
             animation: fadeIn ease-in forwards;
         }
 
+        /* Non-animated box for announcement */
+        .announcement {
+            background-color: #ffffff; /* White background */
+            color: #ff0000; /* Red text */
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.2em;
+            padding: 8px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
         /* Faster fade-in animation */
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -97,6 +110,9 @@
     </div>
 
     <div class="box-container">
+        <div class="announcement">
+            Nov. 18th event is Postponed due to illness.
+        </div>
         <a href="event-info.html" class="box">Event Information</a>
         <a href="guest-speakers.html" class="box">Guest Speakers</a>
         <a href="subpage3.html" class="box">'No Other Land' Trailer</a>
